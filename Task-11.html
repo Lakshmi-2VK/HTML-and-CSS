@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .tex{
+        margin-right: 440px;
+    }
+    .in{
+        height: 30px;
+        width: 500px;
+        border:1px solid rgb(194, 188, 183);
+    }
+    .login{
+        height: 30px;
+        width: 500px;
+        background-color: rgb(65, 209, 97);
+        color: rgb(255, 255, 255);
+        border: 1px solid rgb(65, 209, 97);
+    }
+    .cancel{
+        height: 30px;
+        width: 100px;
+        border-radius: 5px;
+        background-color: rgb(240, 73, 73);
+        color: rgb(255, 255, 255);
+        border: 1px solid rgb(240, 73, 73);
+        margin-right: 300px;
+    }
+  </style>
+</head>
+<body style="text-align: center;">
+    <img src="profile.png">
+  <form>
+    <label for="user" class="tex"><b>Username</b></label><br>
+    <input class="in" type="text" id="user" name="user" placeholder="Enter Username" required><br><br>
+
+    <label for="password" class="tex"><b>Password</b></label><br>
+    <input class="in"  type="password" id="password" name="password" placeholder="Enter Password" required><br><br>
+    
+        
+    <input class="login" type="submit" value="Login"><br>
+    
+    <div style=" margin-right: 400px;">
+    <input   type="checkbox" id="myCheckbox" name="myCheckbox">
+    <label for="myCheckbox">Remember me</label><br>
+    </div><br>
+    <input class="cancel" type="submit" value="Cancel">
+
+    <h14>Forgot <u>password?</u></h14>
+  </form>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page with Links and Results</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh; /* Set the body height to the full viewport height */
+            display: flex;
+        }
+
+        /* Navigation Section for Links */
+        .navigation {
+            width: 20%;
+            background-color: #f7e96c;
+            color: blue;
+            padding: 20px;
+        }
+
+        /* Content Section for Results */
+        .content {
+            width: 80%;
+            padding: 20px;
+            background-color: #f7e96c;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li a {
+            background-color: rgb(255, 255, 255);
+            color: blue;
+            text-decoration: none;
+            color: white;
+        }
+        .des{
+            text-align: left;
+            width:100px;
+            padding: 5px;
+            padding-right: 40px;
+            color: blue;
+            border: 2px solid white;
+            border-spacing: 20px;
+        }
+        .des:visited{
+            color: rgb(76, 25, 143);
+        }
+    </style>
+</head>
+<body>
+    <div class="navigation">
+        <ul>
+            <li><a class="des" href="#" onclick="home()">Home</a></li><br>
+            <li><a class="des" href="#" onclick="musings()">Musings</a></li><br>
+            <li><a class="des" href="#" onclick="mytown()">My town</a></li><br>
+            <li><a class="des" href="#" onclick="lin()">Links</a></li>
+        </ul>
+    </div>
+    
+    <div class="content">
+        <div id="resultDisplay">
+            
+        </div>
+    </div>
+
+    <script>
+        function home() {
+          
+            document.getElementById("resultDisplay").innerHTML = `<div style="color:#64299b;">
+
+<h2>My first styled page</h2> <p>
+Welcome to my styled page!</p>
+<p>It lacks images, but at least it has style. And it has links, even if they don't go anywhere...</p>
+<p>There should be more here, but I don't know what yet.</p><hr>
+<p>Made 5 April 2004 </p> <p><i>by myself.</i></p></div>`;
+        }
+        function musings(){
+            document.getElementById("resultDisplay").innerHTML = `<div style="color:#64299b;"> <h2>Musings Page</h2><hr><p>This is the second page where we discuss about the musings</p><hr></div>`;
+        }
+        function mytown(){
+            document.getElementById("resultDisplay").innerHTML = `<div style="color:#64299b;"> <h2>My Town Page</h2><hr><p>This is the third page where we discuss about my town </p><hr></div>`;
+        }
+        function lin(){
+            document.getElementById("resultDisplay").innerHTML = `<div style="color:#64299b;"> <h2>Links Page</h2><hr><p>This is the fourth page where we discuss about a link</p><hr><a href="https://www.youtube.com/">Click here for opening Youtube</a><hr></div>`;
+        }
+    </script>
+</body>
+</html>

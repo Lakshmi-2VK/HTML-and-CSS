@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .in{
+        width:200px;
+        height:20px;
+    }
+    label {
+      width: 150px;
+      display: inline-block;
+    }
+
+    .radi{
+        display: inline-block;
+
+    }
+  </style>
+</head>
+<body style="background-color: rgb(204, 48, 113); text-align: center;padding: 150px;">
+  <form style="background-color: rgb(160, 38, 89); padding: 20px; color: rgb(255, 255, 255);">
+    
+    <label for="full_name">Name:</label>
+    <input class="in" type="text" id="full_name" name="full_name" required><br><br>
+    
+    <label for="emaill">Email:</label>
+    <input class="in" type="email" id="emaill" name="emaill" required><br><br>
+ 
+    <label for="password">Password:</label>
+    <input class="in" type="password" id="password" name="password" required><br><br>
+
+    <label for="phone">Phone Number:</label>
+    <input class="in" type="number" id="phone" name="phone" required><br><br>
+    <label>Gender:</label>
+        Male:
+        <input class="radi" type="radio" name="gender" value="male">
+        Female:
+        <input   class="radi" type="radio" name="gender" value="female">
+        Other:
+        <input  class="radi" type="radio" name="gender" value="other">
+    <br><br>
+    <label for="lang" style="margin-right: 70px;">language</label>
+    <select id="lang" name="lang" aria-placeholder="Select language">
+    <option value="" disabled selected> Select language</option>
+      <option value="enf">English</option>
+      <option value="hin">Hindi</option>
+      <option value="other">Other</option>
+
+    </select><br><br>
+
+    <label for="zip">Zip Code:</label>
+    <input class="in" type="number" id="zip" name="zip" required><br><br>
+    <label for="message">About:</label>
+    <textarea id="message" name="message" rows="3" cols="24"></textarea>
+       <br><br>
+    <input style="width: 300px;height: 30px; font-size: 16px; font-weight: bold; border-radius: 5px;" type="submit" value="Register">
+  </form>
+</body>
+</html>
